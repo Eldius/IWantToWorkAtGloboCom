@@ -27,14 +27,19 @@ public class DefaultController implements Controller {
 		BigDecimal valorAtual = new BigDecimal(0.00);
 		float margem = tempFinal + 2;
 
+		// Baixar temperatura para a desejada.
 		while (tempAtual > tempFinal) {
 			valorAtual.add(this.baixarTemperatura());
 		}
 
+		// Manter a temperatura dentro da margem aceitável pelo tempo
+		// determinado.
 		for (int t = 0; t < minutos; t++) {
 			tempAtual += 0.5;
 
-			if (!(margem < tempAtual)) {
+			// Se a temperatura não estiver abaixo da margem baixar a
+			// temperatura.
+			if (!(tempAtual < margem)) {
 				valorAtual.add(this.baixarTemperatura());
 			}
 		}
@@ -54,6 +59,8 @@ public class DefaultController implements Controller {
 		}
 
 		arCondicionado.reduz_um_grau();
+
+		this.tempAtual--;
 
 		return resposta;
 	}
