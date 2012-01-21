@@ -26,6 +26,10 @@ public class ArCondicionadoImpl implements ArCondicionado {
 
 		logger.info(sb.toString());
 
+		if (!this.ligado) {
+			logger.info("Ligando...");
+		}
+
 		this.ligado = true;
 	}
 
