@@ -1,4 +1,4 @@
-package net.eldiosantos.gobocom.arcondicionado.controller;
+package net.eldiosantos.gobocom.arcondicionado.controller.interfaces;
 
 import java.math.BigDecimal;
 
