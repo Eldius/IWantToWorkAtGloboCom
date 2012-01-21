@@ -3,10 +3,11 @@
 
 <beans>
   
-  <bean id="arCondicionado" class="net.eldiosantos.gobocom.arcondicionado.ArCondicionadoImpl" />
-  
-  <bean id="controller" class="net.eldiosantos.gobocom.arcondicionado.controller.Controller">
-  	<constructor-arg ref="arCondicionado" />
-  </bean>
+	<bean id="arCondicionado" class="net.eldiosantos.gobocom.arcondicionado.ArCondicionadoImpl" />
+	
+	<bean id="controller" class="net.eldiosantos.gobocom.arcondicionado.controller.DefaultController">
+		<constructor-arg ref="arCondicionado" />
+	</bean>
+
 
 </beans>
