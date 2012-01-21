@@ -28,6 +28,6 @@ public interface Controller {
 	 *            Tempo em minutos.
 	 * @return Retorna o custo da chamada.
 	 */
-	public abstract BigDecimal manterTemperatura(int tempInicial,
-			int tempFinal, int minutos);
+	public abstract BigDecimal manterTemperatura(float tempInicial,
+			float tempFinal, int minutos);
 }
