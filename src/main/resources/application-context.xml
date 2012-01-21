@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+  
+  <bean id="arCondicionado" class="net.eldiosantos.gobocom.arcondicionado.ArCondicionadoImpl" />
+  
+  <bean id="controller" class="net.eldiosantos.gobocom.arcondicionado.controller.Controller">
+  	<constructor-arg ref="arCondicionado" />
+  </bean>
+
+</beans>
