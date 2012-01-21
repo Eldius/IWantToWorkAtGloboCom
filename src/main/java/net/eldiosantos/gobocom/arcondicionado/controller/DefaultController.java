@@ -22,7 +22,7 @@ public class DefaultController implements Controller {
 		valor.setScale(2);
 	}
 
-	public BigDecimal costoTotal() {
+	public BigDecimal custoTotal() {
 		return this.valor;
 	}
 

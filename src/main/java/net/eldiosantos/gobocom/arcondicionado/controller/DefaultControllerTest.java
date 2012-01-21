@@ -33,7 +33,7 @@ public class DefaultControllerTest {
 
 		controller.manterTemperatura(tempIni, tempFim, tempo);
 
-		Assert.assertEquals(custo, controller.costoTotal());
+		Assert.assertEquals(custo, controller.custoTotal());
 	}
 
 }

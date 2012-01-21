@@ -49,6 +49,8 @@ public class MainClass {
 			int tempo = Integer.valueOf(args[2]);
 
 			controller.manterTemperatura(tempIni, tempFim, tempo);
+
+			logger.info("Valor total: " + controller.custoTotal());
 		} catch (Exception e) {
 			logger.error("Parâmetros inválidos.", e);
 			System.exit(1);

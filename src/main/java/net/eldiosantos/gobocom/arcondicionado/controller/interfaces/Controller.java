@@ -15,7 +15,7 @@ public interface Controller {
 	 * 
 	 * @return
 	 */
-	public abstract BigDecimal costoTotal();
+	public abstract BigDecimal custoTotal();
 
 	/**
 	 * Inicia o controle de temperatura.
