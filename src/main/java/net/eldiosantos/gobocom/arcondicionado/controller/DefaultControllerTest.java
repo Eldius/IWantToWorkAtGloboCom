@@ -22,6 +22,7 @@ public class DefaultControllerTest {
 		controller = context.getBean("controller", Controller.class);
 	}
 
+	// Validar cálculo
 	@Test
 	public void test() {
 		float tempIni = 20;
