@@ -3,6 +3,7 @@ package net.eldiosantos.gobocom.arcondicionado.controller;
 import java.math.BigDecimal;
 
 import junit.framework.Assert;
+import net.eldiosantos.gobocom.arcondicionado.controller.interfaces.Controller;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -18,7 +19,7 @@ public class DefaultControllerTest {
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"application-context.xml");
 
-		controller = context.getBean(Controller.class);
+		controller = context.getBean("controller", Controller.class);
 	}
 
 	@Test
@@ -27,7 +28,7 @@ public class DefaultControllerTest {
 		float tempFim = 18;
 		int tempo = 5;
 
-		BigDecimal custo = new BigDecimal(70.0);
+		BigDecimal custo = new BigDecimal("0.70");
 
 		controller.manterTemperatura(tempIni, tempFim, tempo);
 
