@@ -1,0 +1,6 @@
+=> Considerações e impressões:
+	O algoritmo em si é bem simples. Daí resolvi focar na "arquitetura" a ser empregada. Resolvi utilizar o framework Springframework para facilitar o desenvolvimento "orientado a interfaces" e o Log4J como ferramenta de logs. Como acabei incluindo as dependências do Springframework e do Log4J (e não sou muito fã de incluir dependências em repositórios de código) achei que seria interessante utilizar o Maven para o controle das dependências externas e, consequentemente, do processo de build.
+	Um ponto que acrescentou uma certa complexidade ao exercício foi o quesito de instalação via make. Já utilizei esta ferramenta algumas vezes, porém apenas para instalar aplicativos e com scripts já prontos.
+	
+	Percebi que o make é um mais complexo que havia imaginado. Devido a isso ainda não consegui gerar o instalador para o aplicativo.
+	
